@@ -1,0 +1,19 @@
+/* not(selector) chon tat ca cac phan tu khong phai p */
+.top:not(p) {
+  color: red;
+}
+/* Chu i the con la so voi khoi chua no */
+.mi{
+    color: blue;
+}
+/* Thu tu uu tien */
+#lata{
+    color: green;
+}
+/* thu tu uu tien cua id>class(pseudoclass)>selector>* */
+h1{
+    color: orange;
+}
+*{
+    color: purple;
+}

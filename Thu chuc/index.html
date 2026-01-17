@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Mừng Năm Mới 2025</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* --- PHẦN CSS (TRANG TRÍ) --- */
+
+      body {
+        background-color: #8e0000; /* Màu đỏ đậm ngày tết */
+        background-image: radial-gradient(
+          circle,
+          #b30000,
+          #8e0000
+        ); /* Hiệu ứng nền tỏa sáng */
+        height: 100vh; /* Chiều cao full màn hình */
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Căn giữa ngang */
+        align-items: center; /* Căn giữa dọc */
+        font-family: "Dancing Script", cursive; /* Phông chữ kiểu viết tay */
+        overflow: hidden; /* Không cho cuộn trang */
+      }
+
+      .thiep-chuc-tet {
+        background-color: #fff5e1; /* Màu giấy kem sáng */
+        padding: 30px;
+        border-radius: 20px; /* Bo tròn góc */
+        border: 5px solid #ffd700; /* Viền vàng kim loại */
+        text-align: center;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Đổ bóng vàng rực rỡ */
+        max-width: 90%; /* Để không bị tràn màn hình điện thoại */
+        animation: xuatHien 1.5s ease-out; /* Hiệu ứng hiện ra từ từ */
+      }
+
+      h1 {
+        color: #d60000;
+        font-size: 3rem; /* Cỡ chữ to */
+        margin: 0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        color: #333;
+        font-size: 1.5rem;
+        margin: 10px 0 30px 0;
+      }
+
+      .btn-lixi {
+        background-color: #d60000;
+        color: #ffd700;
+        border: 2px solid #ffd700;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: bold;
+        transition: transform 0.2s; /* Hiệu ứng khi di chuột */
+      }
+
+      .btn-lixi:active {
+        transform: scale(0.95); /* Nhấn vào thì nút nhỏ lại xíu */
+      }
+
+      /* Định nghĩa hiệu ứng xuất hiện */
+      @keyframes xuatHien {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="thiep-chuc-tet">
+      <h1>Xuân Bính Ngọ</h1>
+      <p>Chúc bạn Tấn Tài Tấn Lộc<br />Vạn Sự Như Ý!</p>
+
+      <button class="btn-lixi" onclick="banPhaoHoa()">🧧 Nhận Lì Xì</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+      function banPhaoHoa() {
+        // Hiệu ứng pháo hoa cơ bản
+        confetti({
+          particleCount: 150, // Số lượng pháo hoa
+          spread: 70, // Độ toả rộng
+          origin: { y: 0.6 }, // Vị trí bắn (từ dưới lên một chút)
+          colors: ["#FFD700", "#d60000", "#FFFFFF"], // Màu: Vàng, Đỏ, Trắng
+        });
+
+        // Thay đổi chữ trên nút sau khi bấm
+        document.querySelector(".btn-lixi").innerText = "Cảm ơn bạn! ❤️";
+      }
+    </script>
+  </body>
+</html>
